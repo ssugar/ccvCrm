@@ -1,13 +1,13 @@
-ccvPress:
+ccvpress:
   build: .
   links:
-    - ccvMysql:mysql
+    - ccvmysql:mysql
   ports:
     - 80:80
   volumes:
     - /home/ccvAdmin/wwwData:/var/www/html
   mem_limit: 200m
-ccvMysql:
+ccvmysql:
   image: mysql:5.5
   environment:
     MYSQL_ROOT_PASSWORD: insecurepass
