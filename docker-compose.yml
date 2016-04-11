@@ -10,7 +10,7 @@ ccvPress:
 ccvMysql:
   image: mysql:5.5
   environment:
-	MYSQL_ROOT_PASSWORD: insecurepass
+    MYSQL_ROOT_PASSWORD: insecurepass
   volumes:
     - /home/ccvAdmin/mysqlData:/var/lib/mysql
   mem_limit: 200m
